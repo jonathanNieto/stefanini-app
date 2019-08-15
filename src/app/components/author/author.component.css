@@ -1,0 +1,83 @@
+.mat-elevation-z8 {
+    margin-bottom: 5rem;
+}
+
+.mat-form-field {
+    font-size: 1.125rem;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+tr.example-detail-row {
+    height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.example-element-row td {
+    border-bottom-width: 0;
+}
+
+.example-element-detail {
+    overflow: hidden;
+    display: flex;
+}
+
+.example-element-diagram {
+    min-width: 280px;
+    border: 1px solid black;
+    padding: 0 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
+    border-radius: 7px;
+}
+
+.example-element-diagram span {
+    color: rgba(0, 0, 0, .54);
+    font-weight: bolder;
+}
+
+.example-element-diagram h4 {
+    margin: 10px 0;
+}
+
+.example-element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+}
+
+.example-element-description {
+    padding: 16px;
+    padding-top: 8px;
+    text-align: justify;
+}
+
+.example-element-description h4 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.example-element-description-attribution {
+    opacity: 0.5;
+}
+
+mat-card {
+    margin-bottom: 3rem;
+}
+
+mat-spinner {
+    margin: 3rem auto;
+}
