@@ -1,0 +1,31 @@
+<mat-sidenav-container id="visibilityContainer">
+    <mat-sidenav #sidenav (opened)="loadAuthors()" mode="over" [(opened)]="opened">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Author </th>
+                <td mat-cell *matCellDef="let element">
+                    <a [routerLink]="[ '/authors', element.id, 'publications']" (click)="sidenav.close()">
+                        {{element.firstName}} {{element.lastName}}
+                    </a>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color='primary' class="navbar">
+            <span (click)="sidenav.toggle()">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">arrow_back</mat-icon>
+                Authors
+            </span>
+            <div>
+                <a [routerLink]="[ '/']"><span>Home</span></a>
+                <a [routerLink]="[ '/about']"><span>About</span></a>
+            </div>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
