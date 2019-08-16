@@ -6,7 +6,7 @@
     "start": "concurrently \"json-server --watch db.json\" \"ng serve\"",
     "build": "ng build",
     "lint": "ng lint",
-    "ghpages": "ng build --prod --base-href https://jonathannieto.github.io/stefanini-app --output-path docs"
+    "ghpages": "ng build --prod --output-path docs"
   },
   "private": true,
   "dependencies": {
