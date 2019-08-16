@@ -21,3 +21,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## GitHub Pages
+
+To see final result you can [navigate](https://jonathannieto.github.io/stefanini-app/) to `https://jonathannieto.github.io/stefanini-app/`. Mock API managed by [JSON Server](https://github.com/typicode/json-server) is running on `https://mock-api-angular.herokuapp.com/`.
